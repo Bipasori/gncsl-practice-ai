@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="kor">
+
+<head>
+	<title>ART Protocol</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+    <link type="text/css" rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <script type="text/javascript" src="./js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="./js/commons_index.js"></script>
+    <link rel="stylesheet" type="text/css" href="./inc/css/main.css">
+    <link rel="stylesheet" type="text/css" href="./inc/css/swiper.css">
+
+</head>
+<body class="mainbody">
+
+
+
+<div class="popupArea">
+  <div id="posi">
+      <div id="loginBox">
+        <h2>LOGIN</h2>
+        <div><label><font>ID</font> <input type="text" placeholder="아이디를 입력하세요" id="textIpt" /></label></div>
+        <div><label><font>PW</font> <input type="text" placeholder="비밀번호를 입력하세요" id="textIpt" /></label></div>
+        <p><input type="checkbox" id="checkIpt" /> 아이디 저장하기</p></p>
+        <a href="#" id="Sign-in">Sign-in</a>
+        <a href="#" id="Sign-up">Sign-up</a>
+        <span></span>
+      </div>
+  </div>
+</div>
+
+
+<header class="tops">
+  <ul>
+    <li id="logos">
+        <button type="button" id="gnb_open" class="hd_opener"><i class="fa fa-bars" aria-hidden="true"></i></button>
+        <a href="./index.html"><img src="./img/logo.png" border="0" /></a>
+    </li>
+    <li id="topMn">
+        <h2><img src="./img/logo.png" border="0" /></h2>
+        <div class="span"><a href="./page/Validator.html" target="new">Validator</a></div>
+        <div class="span"><a href="./page/Referral.html">Referral</a></div>
+        <div class="span"><a href="./page/Crowd funding.html">Crowd funding</a></div>
+        <div class="span"><a href="./page/Crowd sale.html">Crowd sale</a></div>
+        <div class="span"><a href="./page/Whitepaper.html">Whitepaper</a></div>
+        <div id="mback"></div>
+    </li>
+    <li class="myinfo">
+      <!-- 로그인전 -->
+      <a href="#" id="loginBtn">Sign in</a>
+      <a href="#">Connect Wallet</a>
+      <!-- 로그인전 끝 -->
+      
+      <!-- 로그인후
+      <a href="#" id="loginBtn">Sign Out</a>
+      <a href="#">Connect Wallet</a>
+      <!-- 로그인후 끝 -->
+      </li>
+  </ul>
+</header>
+
+
+
+<!-- container -->
+<section id="mainVisual" class="section">
+    <div class="main-visual-wrapper">
+        <article class="main-visual-slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide main-visual-item item01">
+                        <div class="slide-inner">
+                            <div class="visual-img"><img src="./inc/img/1.jpg" alt="" /></div>
+                            <div class="main-visual-txt-con">
+                                <div class="main-visual-txt-inner area">
+                                    <p class="main-visual-txt1 cm-word-split-JS" data-splitting data-css-property="animation" data-speed="0.03" data-speed-delay="0.1">ART COIN</p>
+                                    <p class="main-visual-txt2">GLOBAL ART WEB3 GROUP based on<br />ART WEB3 Platform Targeting ART RWA Tokenize Business</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide main-visual-item item02">
+                        <div class="slide-inner">
+                            <div class="visual-img" class="visual-right"><img src="./inc/img/2.jpg" alt="" /></div>
+                            <div class="main-visual-txt-con">
+                                <div class="main-visual-txt-inner area">
+                                    <p class="main-visual-txt1 cm-word-split-JS" data-splitting data-css-property="animation" data-speed="0.03" data-speed-delay="0.1">ART COIN</p>
+                                    <p class="main-visual-txt2">GLOBAL ART WEB3 GROUP based on<br />ART WEB3 Platform Targeting ART RWA Tokenize Business</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <aside class="main-visual-controls">
+                <div class="area-box">
+                    <div class="main-visual-control-btns clearfix">
+                        <button class="slide-prev-btn" title="Prev"></button>
+                        <button class="slide-next-btn" title="next"></button>
+                    </div>
+                </div>
+            </aside>
+        </article>
+        <div class="main-visual-loading-bar"><span></span></div>
+    </div>
+</section>
+
+
+<div class="copyRight">
+  <ul>
+    <li>COPYRIGHT(C) <b>2025 ART Protocol</b>. ALL RIGHT RESERVED.</li>
+  </ul>
+</div>
+
+
+
+<script>
+	dep1 = 0,
+	dep2 = 0;
+	
+$(function(){
+	$("#mainVisual").css("height",$(window).height());
+	$(window).resize(function(){
+		$("#mainVisual").css("height",$(window).height());
+	});
+});
+</script>
+<script type="text/javascript" src="./inc/js/swiper.min.js"></script>
+<script type="text/javascript" src="./inc/js/TweenMax.min.js"></script>
+<script type="text/javascript" src="./inc/js/functions.js"></script>
+<script type="text/javascript" src="./inc/js/main.js"></script>
+
+
+</body>
+</html>
